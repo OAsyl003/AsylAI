@@ -1,0 +1,144 @@
+/* Обёртка страницы - всё по центру */
+.signpage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;      /* по горизонтали */
+  justify-content: center;  /* по вертикали */
+  min-height: 100vh;
+  background-color: #121212;
+  padding: 20px;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+  color: #fff;
+}
+
+
+
+
+/* Карточка с формой */
+.card {
+  background-color: #222;
+  padding: 30px 35px;
+  border-radius: 15px;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 0 15px #00e0f3;
+  color: #fff;
+}
+
+/* Заголовки */
+.cardHeader .title {
+  font-size: 1.8rem;
+  margin: 0;
+  font-weight: 700;
+}
+
+.cardHeader .subtitle {
+  font-size: 0.95rem;
+  color: #aaa;
+  margin-top: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Формы */
+.inputGroup {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.3rem;
+}
+
+.inputLabel {
+  font-size: 0.85rem;
+  margin-bottom: 0.4rem;
+  color: #bbb;
+}
+
+.input {
+  padding: 0.6rem 1rem;
+  border-radius: 8px;
+  border: none;
+  background: #111;
+  color: #eee;
+  font-size: 1rem;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.input::placeholder {
+  color: #555;
+}
+
+.input:focus {
+  outline: none;
+  background: #222;
+  box-shadow: 0 0 8px 2px #00e0f3;
+}
+
+/* Опции (чекбокс и ссылка) */
+.options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.85rem;
+  color: #888;
+  margin-bottom: 1.8rem;
+}
+
+.options input[type="checkbox"] {
+  accent-color: #00e0f3;
+  margin-right: 6px;
+}
+
+.options a {
+  color: rgb(242, 245, 242);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.options a:hover {
+  color: #00e0f3;
+}
+
+/* Действия: ссылка Регистрация и кнопка Вход */
+.actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Ссылка "Register" */
+.actions .link {
+  color: rgb(228, 235, 228);
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  cursor: pointer;
+}
+
+.actions .link:hover {
+  color: #00e0f3;
+}
+
+/* Кнопка Log in с анимацией */
+.actions button {
+  padding: 0.5rem 1.5rem;
+  background: #00e0f3;
+  color: #000;
+  border: none;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 1rem;
+  cursor: pointer;
+  box-shadow: 0 0 8px #00e0f3;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.15s ease;
+}
+
+.actions button:hover {
+  background-color: #00e0f3;
+  box-shadow: 0 0 15px #00e0f3;
+  transform: scale(1.05);
+}
+
+.actions button:active {
+  transform: scale(0.95);
+  box-shadow: 0 0 5px #00e0f3;
+}

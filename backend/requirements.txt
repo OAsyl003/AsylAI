@@ -1,0 +1,8 @@
+fastapi
+uvicorn
+sqlalchemy[asyncio]
+aiomysql
+passlib[bcrypt]
+python-jose[cryptography]
+httpx
+googletrans==4.0.0-rc1
